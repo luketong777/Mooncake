@@ -12,12 +12,12 @@ on:
   pull_request_target:
     branches: [ "PR_ID_test" ]
     types: [opened, synchronize, reopened, labeled]
-    paths:
-      - 'mooncake-*/**'
-      - 'extern/**'
-      - 'CMakeLists.txt'
-      - 'scripts/**'
-      - '.github/workflows/**'
+    # paths:
+    #   - 'mooncake-*/**'
+    #   - 'extern/**'
+    #   - 'CMakeLists.txt'
+    #   - 'scripts/**'
+    #   - '.github/workflows/**'
 
 
 jobs:
