@@ -4,7 +4,7 @@ on:
   push:
     branches: [ "main" ]
   pull_request:
-    branches: [ "main" ]
+    branches: [ "main", "PR_ID_test" ]
     types: [opened, synchronize, reopened, labeled]
 
 
