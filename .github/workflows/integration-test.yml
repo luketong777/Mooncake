@@ -2,7 +2,7 @@ name: 'Integration test (Linux)'
 
 on:
   push:
-    branches: [ "PR_ID_test" ]
+    branches: [ "main" ]
     paths:
       - 'mooncake-*/**'
       - 'extern/**'
@@ -10,14 +10,14 @@ on:
       - 'scripts/**'
       - '.github/workflows/**'
   pull_request_target:
-    branches: [ "PR_ID_test" ]
+    branches: [ "main" ]
     types: [opened, synchronize, reopened, labeled]
-    # paths:
-    #   - 'mooncake-*/**'
-    #   - 'extern/**'
-    #   - 'CMakeLists.txt'
-    #   - 'scripts/**'
-    #   - '.github/workflows/**'
+    paths:
+      - 'mooncake-*/**'
+      - 'extern/**'
+      - 'CMakeLists.txt'
+      - 'scripts/**'
+      - '.github/workflows/**'
 
 
 jobs:
