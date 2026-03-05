@@ -1,5 +1,7 @@
 # Mooncake Architecture
 
+
+
 Mooncake 旨在通过在高速互联的 DRAM/SSD 资源上构建一个多级缓存池，来提升大型语言模型（LLM）等场景下的推理效率，尤其是在慢速对象存储环境中。与传统缓存系统相比，Mooncake 的独特之处在于，它能够利用 (GPUDirect) RDMA 技术，以零拷贝的方式将数据从发起端的 DRAM/VRAM 直接传输到接收端的 DRAM/VRAM，同时最大限度地利用单机多网卡资源。
 
 - 提供对象级别的数据存储服务
